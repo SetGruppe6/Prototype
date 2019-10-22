@@ -62,6 +62,8 @@ public class Arrangement {
         String sted;
         String tid;
 
+
+
         Scanner sjekk = new Scanner(System.in);
         System.out.println("Skriv navn på arrangement:");
         navn = sjekk.nextLine();
@@ -72,8 +74,13 @@ public class Arrangement {
         System.out.println("Når går arrangementet?");
         tid = sjekk.nextLine();
 
-        //Arrangement hei = new Arrangement (navn, sted, tid);
+        Arrangement hei = new Arrangement (navn, sted, tid);
 
+        ArrayList<Arrangement> liste = new ArrayList<>();
+
+        liste.add(hei);
+
+        System.out.println(liste);
 
     }
 
