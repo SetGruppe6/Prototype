@@ -43,7 +43,8 @@ public class Arrangement {
     }
 
 
-    //METODER
+//METODER
+
 
     public static String isNameLongEnough (String name){
 
@@ -71,8 +72,15 @@ public class Arrangement {
         System.out.println("Når går arrangementet?");
         tid = sjekk.nextLine();
 
+        //Arrangement hei = new Arrangement (navn, sted, tid);
+
 
     }
 
+
+    @Override
+    public String toString() {
+        return "Arrangementsnavn: " + arrangementNavn + "\nArrangementssted: " + arrangementSted + "\nArrangementstid: " + arrangementTid;
+    }
 
 }
