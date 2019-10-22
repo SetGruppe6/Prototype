@@ -10,6 +10,5 @@ public class ArrangementTest {
         assertEquals("name too long", Arrangement.isNameLongEnough("VasaloppetVasaloppetVasaloppetVasaloppetVasaloppetVasaloppetVasaloppetVasaloppetVasaloppetVasaloppetVasaloppetVasaloppetVasaloppet"));
         assertEquals("name too short", Arrangement.isNameLongEnough("Vasa"));
 
-
     }
 }
