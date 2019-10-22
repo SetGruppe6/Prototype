@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Arrangement {
 
     private String arrangementNavn;
@@ -51,6 +54,24 @@ public class Arrangement {
         } else {
             return "name too short";
         }
+    }
+
+    public static void scanInfo(){
+        String navn;
+        String sted;
+        String tid;
+
+        Scanner sjekk = new Scanner(System.in);
+        System.out.println("Skriv navn på arrangement:");
+        navn = sjekk.nextLine();
+        System.out.println("Skriv inn sted:");
+
+        sted =   sjekk.nextLine();
+
+        System.out.println("Når går arrangementet?");
+        tid = sjekk.nextLine();
+
+
     }
 
 
